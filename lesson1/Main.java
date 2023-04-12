@@ -10,8 +10,8 @@ public class Main {
             // Показ того, что идет не так и продолжение исполнение
             e.printStackTrace();
         } catch (Exception e) {
+            // Исключение
             throw new RuntimeException();
         }
-
     }
 }
