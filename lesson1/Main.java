@@ -7,10 +7,10 @@ public class Main {
             int b = 3;
             System.out.println(a / b);
         } catch (ArithmeticException e) {
-            //Показ того, что идет не так и продолжение исполнение 
+            // Показ того, что идет не так и продолжение исполнение
             e.printStackTrace();
-        } catch(RuntimeException e){
-
+        } catch (Exception e) {
+            throw new RuntimeException();
         }
 
     }
