@@ -5,6 +5,7 @@ public class Task1 {
         System.out.println("Задание 1");
         Scanner use = new Scanner(System.in);
         System.out.print("> ");
+
         int number = use.nextInt();
         int[] array = { 1, 2, 3, 4, 5 };
         int result = arrayN(array, number);
@@ -25,12 +26,15 @@ public class Task1 {
         if (array == null) {
             return -3;
         }
+
         if (array.length == 0) {
             return -4;
         }
+
         if (array.length < 3) {
             return -1;
         }
+
         for (int i = 0; i < array.length; i++) {
             if (array[i] == n) {
                 return i;
