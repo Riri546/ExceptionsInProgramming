@@ -12,7 +12,6 @@ public class Task1 {
     }
 
     private static int arrayN(int[] array, int n) {
-3
         if (array == null)
             return -3;
         if (array.length == 0)
