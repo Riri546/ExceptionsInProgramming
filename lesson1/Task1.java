@@ -17,7 +17,7 @@ public class Task1 {
             default -> System.out.printf("%d Имеет инлекс %b", number, result);
         }
 
-        System.out.println(arrayN(array, a));
+        System.out.println(arrayN(array, number));
         use.close();
     }
 
