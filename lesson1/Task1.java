@@ -18,7 +18,7 @@ public class Task1 {
         }
 
         System.out.println(arrayN(array, a));
-        s.close();
+        use.close();
     }
 
     private static int arrayN(int[] array, int n) {
