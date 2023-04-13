@@ -12,14 +12,15 @@ public class Task1 {
     }
 
     private static int arrayN(int[] array, int n) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == n) {
-
+        int result = 0;
+        if (array == null) return -3;
+        if (array.length == 0) return -4; 
+        if (array.length < 3) return -1;
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] == n) {
+                    result = i;
+                }
+                return result;
             }
-            return i;
+        } return result;
         }
-
-        return n;
-    }
-
-}
