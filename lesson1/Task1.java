@@ -7,10 +7,11 @@ public class Task1 {
         int a = s.nextInt();
         int b = s.nextInt();
         int [] array = {1, 2, 3, 4, 5};
-        arrayN (array);
+        arrayN (array, a);
+        s.close();
     }
 
-private static void arrayN(int[] array, int ) {
+private static void arrayN(int[] array, int n1) {
 
 }
 
