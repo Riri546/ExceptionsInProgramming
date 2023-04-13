@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        System.out.println("Задание 1");
         Scanner s = new Scanner(System.in);
         System.out.print("> ");
         int a = s.nextInt();
