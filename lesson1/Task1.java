@@ -25,11 +25,9 @@ public class Task1 {
         if (array == null) {
             return -3;
         }
-
         if (array.length == 0) {
             return -4;
         }
-
         if (array.length < 3) {
             return -1;
         }
