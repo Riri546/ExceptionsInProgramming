@@ -7,7 +7,7 @@ public class Task1 {
         System.out.println("> ");
         int a = s.nextInt();
         int[] array = { 1, 2, 3, 4, 5 };
-        arrayN(array, a);
+        System.out.println(arrayN(array, a));
         s.close();
     }
 
