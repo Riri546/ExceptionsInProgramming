@@ -9,7 +9,7 @@ public class Task1 {
         int[] array = { 1, 2, 3, 4, 5 };
         int result = arrayN(array, a);
 
-        switch (result){
+        switch (result) {
             case -3 -> System.out.println("Массив не может быть null");
             case -4 -> System.out.println("Длина массива равна нулю");
             case -1 -> System.out.println("Массив меньше заданной длины");
@@ -22,16 +22,17 @@ public class Task1 {
     }
 
     private static int arrayN(int[] array, int n) {
-        if (array == null){
+        if (array == null) {
             return -3;
         }
-           
-        if (array.length == 0){
+
+        if (array.length == 0) {
             return -4;
         }
-            
-        if (array.length < 3)
+
+        if (array.length < 3) {
             return -1;
+        }
         for (int i = 0; i < array.length; i++) {
             if (array[i] == n) {
                 return i;
