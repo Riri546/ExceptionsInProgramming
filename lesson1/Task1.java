@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
         System.out.println("Задание 1");
-        Scanner s = new Scanner(System.in);
+        Scanner use = new Scanner(System.in);
         System.out.print("> ");
-        int a = s.nextInt();
+        int a = use.nextInt();
         int[] array = { 1, 2, 3, 4, 5 };
         int result = arrayN(array, a);
 
