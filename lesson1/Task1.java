@@ -5,16 +5,16 @@ public class Task1 {
         System.out.println("Задание 1");
         Scanner use = new Scanner(System.in);
         System.out.print("> ");
-        int a = use.nextInt();
+        int number = use.nextInt();
         int[] array = { 1, 2, 3, 4, 5 };
-        int result = arrayN(array, a);
+        int result = arrayN(array, number);
 
         switch (result) {
             case -3 -> System.out.println("Массив не может быть null");
             case -4 -> System.out.println("Длина массива равна нулю");
             case -1 -> System.out.println("Массив меньше заданной длины");
-            case -2 -> System.out.println("% d Элемент не найден" + a);
-            default -> System.out.printf("%d Имеет инлекс %b", a, result);
+            case -2 -> System.out.println("% d Элемент не найден" + number);
+            default -> System.out.printf("%d Имеет инлекс %b", number, result);
         }
 
         System.out.println(arrayN(array, a));
