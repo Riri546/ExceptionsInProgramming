@@ -7,6 +7,16 @@ public class Task1 {
         System.out.print("> ");
         int a = s.nextInt();
         int[] array = { 1, 2, 3, 4, 5 };
+        int res = arrayN(array, a)
+
+        switch (res){
+            case -3 -> System.out.println("Массив не может быть null");
+            case -4 -> System.out.println("Длина массива равна нулю");
+            case -1 -> System.out.println("Массив меньше заданной длины");
+            case -2 -> System.out.println("% d Элемент не найден" + a);
+            default -> System.out.printf("%d Имеет инлекс %b", a, res);
+        }
+
         System.out.println(arrayN(array, a));
         s.close();
     }
