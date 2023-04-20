@@ -20,7 +20,7 @@ public class ex1 {
             for (;;) {
                 try {
                     index = scanner.nextInt();
-                    break;
+                    continue outer;
                 } catch (Exception e) {
                     System.out.println("Вы ввели не цифру! Повторите ввод (цифры от 0 до 9)");
                 }
