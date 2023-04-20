@@ -8,7 +8,8 @@ public class ex1 {
             int[] arr = new int[10];
             System.out.println("Укажите индекс элемента массива, в который хотите записать значение 1");
             int index;
-            while (true) {
+            boolean count = true;
+            while (count) {
                 try {
                     index = scanner.nextInt();
                     break;
