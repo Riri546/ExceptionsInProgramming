@@ -7,14 +7,15 @@ public class ex1 {
         try (Scanner scanner = new Scanner(System.in)) {
             int[] arr = new int[10];
             System.out.println("Укажите индекс элемента массива, в который хотите записать значение 1");
+            int index;
             while (true) {
                 try {
-                    int index = scanner.nextInt();
+                    index = scanner.nextInt();
+                    break;
                 } catch (Exception e) {
-
+                    System.out.println("Вы ввели не цифру! Повторите ввод (цифры от 0 до 9)");
                 }
             }
-
             try {
                 arr[index] = 1;
             } catch (Exception e) {
