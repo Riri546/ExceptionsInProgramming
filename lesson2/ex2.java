@@ -11,19 +11,24 @@ public class ex2 {
         int val = 0;
         for (int i = 0; i < arr.length; i++) {
             // for (int j = 0; j < arr[i].length; j++){
-            try {
+            // try {
                 for (int j = 0; j < 5; j++) {
                     try {
                         val = Integer.parseInt(arr[i][j]);
-                    } catch (Exception E) {
+                        
+                    } catch (IndexOutOfBoundsException e){
+                        break;
+                    } catch (Exception e) {
                         val = 0;
+                    } 
                     }
-                    sum += val;
-                }
-            } catch (IndexOutOfBoundsException e) {
-
-            }
+                // }
+            // } catch (IndexOutOfBoundsException e) {
+            //     System.out.println("n");
+            //     break;
+            // }
         }
+        sum += val;
         return sum;
     }
 }
