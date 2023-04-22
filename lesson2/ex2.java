@@ -16,7 +16,6 @@ public class ex2 {
                 } catch (Exception E) {
                     val = 0;
                 }
-
                 sum += val;
             }
         }
