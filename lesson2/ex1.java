@@ -11,6 +11,7 @@ public class ex1 {
             while (true) {
                 try {
                     index = scanner.nextInt();
+                    break;
                 } catch (Exception e) {
                     System.out.println("Здесь должно быть число от 0 до 9!");
                     break;
@@ -19,7 +20,6 @@ public class ex1 {
                     arr[index] = 1;
                 } catch (Exception e) {
                     System.out.println("Указан индекс за пределами массива");
-                    break;
                 }
             }
         }
