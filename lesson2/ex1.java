@@ -26,7 +26,6 @@ public class ex1 {
             } catch (Exception e) {
                 System.out.println("Указан индекс за пределами массива");
             }
-            }
         }
     }
-
+}
