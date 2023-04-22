@@ -12,25 +12,25 @@ public class ex2 {
         for (int i = 0; i < arr.length; i++) {
             // for (int j = 0; j < arr[i].length; j++){
             // try {
-                for (int j = 0; j < 5; j++) {
-                    try {
-                        val = Integer.parseInt(arr[i][j]);
-                    } catch (IndexOutOfBoundsException e){
-                        break;
-                    } catch (Exception e) {
-                        val = 0;
-                    } 
-                    }
-                    
-                // }
+            for (int j = 0; j < 5; j++) {
+                try {
+                    val = Integer.parseInt(arr[i][j]);
+                } catch (IndexOutOfBoundsException e) {
+                    break;
+                } catch (Exception e) {
+                    val = 0;
+                }
+            }
+
+            // }
             // } catch (IndexOutOfBoundsException e) {
-            //     System.out.println("n");
-            //     break;
+            // System.out.println("n");
+            // break;
             // }
             sum += val;
-            }
-            
-            return sum;
-       
+        }
+
+        return sum;
+
     }
 }
