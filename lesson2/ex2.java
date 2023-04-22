@@ -20,7 +20,7 @@ public class ex2 {
                     }
                     sum += val;
                 }
-            } catch (Exception e) {
+            } catch (IndexOutOfBoundsException e) {
 
             }
         }
