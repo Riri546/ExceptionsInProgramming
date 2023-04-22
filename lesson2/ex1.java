@@ -3,6 +3,9 @@ package lesson2;
 import java.util.Scanner;
 
 public class ex1 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int[] arr = new int[10];
@@ -14,9 +17,8 @@ public class ex1 {
                     break;
                 } catch (Exception e) {
                     System.out.println("Здесь должно быть число от 0 до 9!");
-                    break;
                 }
-                try {
+                try{
                     arr[index] = 1;
                 } catch (Exception e) {
                     System.out.println("Указан индекс за пределами массива");
