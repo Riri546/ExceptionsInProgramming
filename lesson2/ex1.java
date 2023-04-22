@@ -13,7 +13,6 @@ public class ex1 {
             int index = -1;
             try {
                 index = scanner.nextInt();
-                break;
             } catch (Exception e) {
                 System.out.println("Здесь должно быть число от 0 до 9!");
             }
