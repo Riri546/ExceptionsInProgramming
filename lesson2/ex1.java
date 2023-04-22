@@ -8,39 +8,39 @@ public class ex1 {
             int[] arr = new int[10];
             System.out.println("Укажите индекс элемента массива, в который хотите записать значение 1");
             int index = -1;
-            while (true){
-                try{
+            while (true) {
+                try {
                     index = scanner.nextInt();
                 } catch (Exception e) {
                     System.out.println("Здесь должно быть число!");
                     break;
                 }
                 try {
-                    arr[index] = 1; 
-                  } catch(Exception e) {
+                    arr[index] = 1;
+                } catch (Exception e) {
 
-                  }
+                }
             }
         }
     }
-            // boolean count = true;
-            // while (count) {
-            // try {
-            // index = scanner.nextInt();
-            // break;
-            // } catch (Exception e) {
-            // System.out.println("Вы ввели не цифру! Повторите ввод (цифры от 0 до 9)");
-            // }
-            // }
-    //         for (;;) {
-    //             try {
-    //                 index = scanner.nextInt();
-    //                 continue outer;
-    //             } catch (Exception e) {
-    //                 System.out.println("Вы ввели не цифру! Повторите ввод (цифры от 0 до 9)");
-    //             }
-    //         }
-    //         
-    //     }
+    // boolean count = true;
+    // while (count) {
+    // try {
+    // index = scanner.nextInt();
+    // break;
+    // } catch (Exception e) {
+    // System.out.println("Вы ввели не цифру! Повторите ввод (цифры от 0 до 9)");
+    // }
+    // }
+    // for (;;) {
+    // try {
+    // index = scanner.nextInt();
+    // continue outer;
+    // } catch (Exception e) {
+    // System.out.println("Вы ввели не цифру! Повторите ввод (цифры от 0 до 9)");
+    // }
+    // }
+    //
+    // }
     // }
 }
