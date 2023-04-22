@@ -14,13 +14,13 @@ public class ex2 {
             for (int j = 0; j < 5; j++) {
                 try {
                     val = Integer.parseInt(arr[i][j]);
-                    
                 } catch (IndexOutOfBoundsException e) {
                     break;
                 } catch (Exception e) {
                     val = 0;
                 }
                 sum += val;
+
             }
         }
         return sum;
