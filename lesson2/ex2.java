@@ -11,7 +11,6 @@ public class ex2 {
         int val = 0;
         for (int i = 0; i < arr.length; i++) {
             // for (int j = 0; j < arr[i].length; j++){
-            // try {
             for (int j = 0; j < 5; j++) {
                 try {
                     val = Integer.parseInt(arr[i][j]);
@@ -21,16 +20,8 @@ public class ex2 {
                     val = 0;
                 }
             }
-
-            // }
-            // } catch (IndexOutOfBoundsException e) {
-            // System.out.println("n");
-            // break;
-            // }
             sum += val;
         }
-
         return sum;
-
     }
 }
