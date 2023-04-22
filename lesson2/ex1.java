@@ -11,8 +11,9 @@ public class ex1 {
             while (true){
                 try{
                     index = scanner.nextInt();
-                } catch{
-                    
+                } catch (Exception e) {
+                    System.out.println("Здесь должно быть число!");
+
                 }
             }
         }
