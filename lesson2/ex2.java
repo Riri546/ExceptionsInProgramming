@@ -14,7 +14,7 @@ public class ex2 {
                 try {
                     val = Integer.parseInt(arr[i][j]);
                 } catch (Exception E) {
-
+                    val = 0;
                 }
 
                 sum += val;
