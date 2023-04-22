@@ -16,7 +16,7 @@ public class ex2 {
                     int val = 0;
                     try {
                         val = Integer.parseInt(arr[i][j]);
-                    } catch (IllegalArgumentException e) {
+                    } catch (NumberFormatException e) {
                         e.printStackTrace();
                     }
                     sum += val;
@@ -24,6 +24,7 @@ public class ex2 {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("Неизвестная ошибка");
         }
         return sum;
     }
