@@ -11,7 +11,6 @@ public class ex2 {
         try {
             for (int i = 0; i < arr.length; i++) {
                 // for (int j = 0; j < arr[i].length; j++){
-
                 for (int j = 0; j <= 5; j++) {
                     int val = 0;
                     try {
@@ -23,8 +22,10 @@ public class ex2 {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Неизвестная ошибка");
+            // e.printStackTrace();
+            throw new RuntimeException("Неизвестная ошибка. " + e.getMessage());
+            // System.out.println("Неизвестная ошибка");
+            // sum = 0;
         }
         return sum;
     }
