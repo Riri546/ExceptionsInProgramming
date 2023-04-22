@@ -11,17 +11,19 @@ public class ex1 {
             int[] arr = new int[10];
             System.out.println("Укажите индекс элемента массива, в который хотите записать значение 1");
             int index = -1;
-            try {
-                index = scanner.nextInt();
+            while (true) {
                 try {
-                    arr[index] = 1;
+                    index = scanner.nextInt();
+                    try {
+                        arr[index] = 1;
+                    } catch (Exception e) {
+                        System.out.println("Указан индекс за пределами массива");
+                    }
                 } catch (Exception e) {
-                    System.out.println("Указан индекс за пределами массива");
+                    System.out.println("Здесь должно быть число от 0 до 9!");
                 }
-            } catch (Exception e) {
-                System.out.println("Здесь должно быть число от 0 до 9!");
+
             }
-            
         }
     }
 }
