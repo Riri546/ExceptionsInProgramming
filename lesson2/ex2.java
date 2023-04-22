@@ -10,13 +10,18 @@ public class ex2 {
         int sum = 0;
         int val = 0;
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                try {
-                    val = Integer.parseInt(arr[i][j]);
-                } catch (Exception E) {
-                    val = 0;
+            // for (int j = 0; j < arr[i].length; j++){
+            try {
+                for (int j = 0; j < 5; j++) {
+                    try {
+                        val = Integer.parseInt(arr[i][j]);
+                    } catch (Exception E) {
+                        val = 0;
+                    }
+                    sum += val;
                 }
-                sum += val;
+            } catch (Exception e) {
+
             }
         }
         return sum;
