@@ -20,12 +20,13 @@ public class ex1 {
                     System.out.println("Здесь должно быть число от 0 до 9!");
                     scanner.next();
                 }
-                try {
-                    arr[index] = 1;
-                } catch (Exception e) {
-                    System.out.println("Указан индекс за пределами массива");
-                }
+            }
+            try {
+                arr[index] = 1;
+            } catch (Exception e) {
+                System.out.println("Указан индекс за пределами массива");
+            }
             }
         }
     }
-}
+
