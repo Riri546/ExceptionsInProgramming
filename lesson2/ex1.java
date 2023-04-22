@@ -13,14 +13,15 @@ public class ex1 {
             int index = -1;
             try {
                 index = scanner.nextInt();
+                try {
+                    arr[index] = 1;
+                } catch (Exception e) {
+                    System.out.println("Указан индекс за пределами массива");
+                }
             } catch (Exception e) {
                 System.out.println("Здесь должно быть число от 0 до 9!");
             }
-            try {
-                arr[index] = 1;
-            } catch (Exception e) {
-                System.out.println("Указан индекс за пределами массива");
-            }
+            
         }
     }
 }
