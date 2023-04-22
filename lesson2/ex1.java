@@ -11,6 +11,7 @@ public class ex1 {
             int[] arr = new int[10];
             System.out.println("Укажите индекс элемента массива, в который хотите записать значение 1");
             int index = -1;
+            
             while (true) {
                 try {
                     index = scanner.nextInt();
