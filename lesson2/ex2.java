@@ -8,19 +8,22 @@ public class ex2 {
 
     private static int sum2d(String[][] arr) {
         int sum = 0;
-        int val = 0;
-        for (int i = 0; i < arr.length; i++) {
-            // for (int j = 0; j < arr[i].length; j++){
-            for (int j = 0; j <= 5; j++) {
-                try {
-                    val = Integer.parseInt(arr[i][j]);
-                } catch (IndexOutOfBoundsException e) {
-                    break;
-                } catch (Exception e) {
-                    val = 0;
+        try {
+            for (int i = 0; i < arr.length; i++) {
+                // for (int j = 0; j < arr[i].length; j++){
+
+                for (int j = 0; j <= 5; j++) {
+                    int val = 0;
+                    try {
+                        val = Integer.parseInt(arr[i][j]);
+                    } catch (IllegalArgumentException e) {
+                        e.printStackTrace();
+                    }
+                    sum += val;
                 }
-                sum += val;
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return sum;
     }
