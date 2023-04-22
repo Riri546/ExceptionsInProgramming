@@ -13,8 +13,13 @@ public class ex1 {
                     index = scanner.nextInt();
                 } catch (Exception e) {
                     System.out.println("Здесь должно быть число!");
-
+                    break;
                 }
+                try {
+                    arr[index] = 1; 
+                  } catch(Exception e) {
+
+                  }
             }
         }
     }
@@ -35,11 +40,7 @@ public class ex1 {
     //                 System.out.println("Вы ввели не цифру! Повторите ввод (цифры от 0 до 9)");
     //             }
     //         }
-    //         try {
-    //             arr[index] = 1;
-    //         } catch (Exception e) {
-    //             System.out.println("Указан индекс за пределам массива");
-    //         }
+    //         
     //     }
     // }
 }
