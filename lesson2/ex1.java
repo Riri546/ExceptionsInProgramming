@@ -3,9 +3,6 @@ package lesson2;
 import java.util.Scanner;
 
 public class ex1 {
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int[] arr = new int[10];
