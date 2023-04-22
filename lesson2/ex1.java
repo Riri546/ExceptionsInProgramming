@@ -18,7 +18,8 @@ public class ex1 {
                 try {
                     arr[index] = 1;
                 } catch (Exception e) {
-
+                    System.out.println("Указан индекс за пределами массива");
+                    break;
                 }
             }
         }
