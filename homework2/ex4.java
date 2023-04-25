@@ -8,13 +8,15 @@ public class ex4 {
     public static void main(String[] args) {
         int a = 1;
         int b = 0;
+        int res;
         String strings1;
 
         try {
             String[] strings = { "apple", "orange" };
             strings1 = strings[1];
             test();
-            a = 1 / 0;
+            res = a/b;
+            System.out.println(res);
         } catch (ArithmeticException e) {
             e.printStackTrace();
             System.out.println("На ноль делить нельзя");
