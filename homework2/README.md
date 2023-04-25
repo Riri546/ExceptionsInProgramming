@@ -10,6 +10,7 @@
 # Задание 4
 Исправьте код, примените подходящие способы обработки исключений:
 
+``` java
 public static void main(String[] args) {
         InputStream inputStream;
         try {
@@ -38,4 +39,5 @@ private static void test() throws IOException {
         FileReader reader = new FileReader(file);
         reader.read();
         test();
-} 
+}
+ ```
