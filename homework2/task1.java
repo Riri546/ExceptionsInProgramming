@@ -13,9 +13,10 @@ public class task1 {
                     System.out.print("Вы ввели число: " + result);
                     break;
                 } catch (Exception e) {
-                    System.out.println("Вы ");
+                    System.out.println("Вы ввели для раздления целого от дробного ',' вместо '.'. Повторите ввод: ");
 
-                }
+                } 
+
             }
 
         }
