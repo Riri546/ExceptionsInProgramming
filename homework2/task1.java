@@ -16,12 +16,6 @@ public class task1 {
                     e.printStackTrace();
                     System.out.print("Здесь должно быть дробное число, введенное через симавол '.'. Повторите ввод : ");
                     scan.next();
-
-                    // } catch (Exception e) {
-                    // System.out.println("Вы ввели для раздления целого от дробного ',' вместо '.'.
-                    // Повторите ввод: ");
-                    // scan.next();
-                    // }
                 }
             }
         }
