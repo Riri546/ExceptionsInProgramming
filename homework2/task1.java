@@ -8,7 +8,7 @@ public class task1 {
         try (Scanner scan = new Scanner(System.in)) {
             String number = scan.nextLine();
             float result;
-            while(true) {
+            while (true) {
                 try {
                     result = Float.parseFloat(number);
                     System.out.print("Вы ввели число: " + result);
@@ -20,6 +20,5 @@ public class task1 {
                 }
             }
         }
-
     }
 }
