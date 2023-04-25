@@ -12,11 +12,11 @@ public class task1 {
                     float result = Float.parseFloat(number);
                     System.out.print("Вы ввели число: " + result);
                     break;
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
                 } catch (Exception e) {
                     System.out.println("Вы ввели для раздления целого от дробного ',' вместо '.'. Повторите ввод: ");
-
-                } 
-
+                }
             }
 
         }
