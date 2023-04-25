@@ -6,18 +6,21 @@ import java.io.IOException;
 
 public class ex4 {
     public static void main(String[] args) {
+        int a;
+        String strings1;
+        System.out.println(strings1);
+            System.out.println(a);
         try {
             String[] strings = { "apple", "orange" };
-            String strings1 = strings[2];
+            strings1 = strings[1];
             test();
-            int a = 1 / 0;
-            System.out.println(strings1);
-            System.out.println(a);
+            a = 1 / 0;
+            
         } catch (ArithmeticException e) {
             e.printStackTrace();
             System.out.println("На ноль делить нельзя");
         } catch (StackOverflowError error) {
-            System.out.println("Что-то сломалось"); 
+            System.out.println("Что-то сломалось");
         } catch (Throwable e) {
             e.printStackTrace();
         } finally {
@@ -25,6 +28,7 @@ public class ex4 {
         }
         System.out.println("Я жив!");
     }
+    
 
     private static void test() throws IOException {
         File file = new File("1");
