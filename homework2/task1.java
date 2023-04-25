@@ -7,9 +7,10 @@ public class task1 {
         System.out.print("Введите дробное число, разделив целое от дробного с помощью символа '.' : ");
         try (Scanner scan = new Scanner(System.in)) {
             String number = scan.nextLine();
+            float result;
             while(true) {
                 try {
-                    float result = Float.parseFloat(number);
+                    result = Float.parseFloat(number);
                     System.out.print("Вы ввели число: " + result);
                     break;
                 } catch (NumberFormatException e) {
