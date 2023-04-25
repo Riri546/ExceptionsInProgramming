@@ -8,12 +8,13 @@ public class task4 {
     public static void main(String[] args) {
         int a = 0;
         String strings1;
-
         try {
             String[] strings = { "apple", "orange" };
             strings1 = strings[1];
             test();
             a = 1 / 0;
+            System.out.println(strings1);
+            System.out.println(a);
         } catch (ArithmeticException e) {
             e.getMessage();
             e.printStackTrace();
