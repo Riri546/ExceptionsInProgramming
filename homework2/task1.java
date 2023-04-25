@@ -14,11 +14,17 @@ public class task1 {
                     break;
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
-                } catch (Exception e) {
-                    System.out.println("Вы ввели для раздления целого от дробного ',' вместо '.'. Повторите ввод: ");
+                    System.out.println("Вы ввели буквенный символ. Повторите ввод: ");
+                    scan.next();
+
+                    // } catch (Exception e) {
+                    // System.out.println("Вы ввели для раздления целого от дробного ',' вместо '.'.
+                    // Повторите ввод: ");
+                    // scan.next();
+                    // }
                 }
             }
         }
-    }
 
+    }
 }
