@@ -4,10 +4,15 @@ import java.util.Scanner;
 
 public class task1 {
     public static void main(String[] args) {
-        System.out.println("введите дробное число");
+        System.out.print("введите дробное число: ");
         try (Scanner scan = new Scanner(System.in)) {
-            float num = scan.nextFloat();
-            System.out.println("Вы ввели число: " + num);
+            String number = scan.nextLine();
+            try (){
+                float result = Float.parseFloat(number);
+            System.out.print("Вы ввели число: " + result);
+            }
+            
+
         }
 
     }
