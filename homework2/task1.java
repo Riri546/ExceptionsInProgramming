@@ -14,7 +14,7 @@ public class task1 {
                     break;
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
-                    System.out.print("Здесь должно быть дробное число, введенное через симавол '.' : ");
+                    System.out.print("Здесь должно быть дробное число, введенное через симавол '.'. Повторите ввод : ");
                     scan.next();
 
                     // } catch (Exception e) {
