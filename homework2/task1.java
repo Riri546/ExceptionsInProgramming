@@ -23,7 +23,7 @@ public class task1 {
                     System.out.print("Здесь должно быть дробное число, введенное через симавол '.'. Повторите ввод : ");
                     scan.next();
                     break;
-                }
+                } 
             }
             scan.close();
         }
