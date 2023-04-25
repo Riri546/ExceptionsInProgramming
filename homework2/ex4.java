@@ -6,16 +6,15 @@ import java.io.IOException;
 
 public class ex4 {
     public static void main(String[] args) {
-        int a;
+        int a = 1;
+        int b = 0;
         String strings1;
-        System.out.println(strings1);
-            System.out.println(a);
+
         try {
             String[] strings = { "apple", "orange" };
             strings1 = strings[1];
             test();
             a = 1 / 0;
-            
         } catch (ArithmeticException e) {
             e.printStackTrace();
             System.out.println("На ноль делить нельзя");
@@ -28,7 +27,6 @@ public class ex4 {
         }
         System.out.println("Я жив!");
     }
-    
 
     private static void test() throws IOException {
         File file = new File("1");
