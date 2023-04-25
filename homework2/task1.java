@@ -7,11 +7,14 @@ public class task1 {
         System.out.print("введите дробное число: ");
         try (Scanner scan = new Scanner(System.in)) {
             String number = scan.nextLine();
-            try (){
-                float result = Float.parseFloat(number);
-            System.out.print("Вы ввели число: " + result);
+            while (true) {
+                try {
+                    float result = Float.parseFloat(number);
+                    System.out.print("Вы ввели число: " + result);
+                } catch (Exception e) {
+
+                }
             }
-            
 
         }
 
