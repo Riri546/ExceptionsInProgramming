@@ -1,5 +1,11 @@
 package lesson3;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 public class task1 {
     private static void rwLine(Path pathRead, Path pathWrite) {
         BufferedReader in = null;
