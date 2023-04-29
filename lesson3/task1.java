@@ -12,8 +12,8 @@ public class task1 {
     }
 
     private static void rwLine(Path pathRead, Path pathWrite) {
-        try (BufferedReader in = new BufferedReader(Files.newBufferedReader(pathRead));
-                BufferedWriter out = new BufferedWriter(Files.newBufferedWriter(pathWrite))) {
+        try (BufferedReader in = Files.newBufferedReader(pathRead);
+                BufferedWriter out = Files.newBufferedWriter(pathWrite)) {
             out.write(in.readLine());
         } catch (IOException e) {
             e.printStackTrace();
