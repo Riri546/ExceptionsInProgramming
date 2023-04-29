@@ -7,10 +7,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class task1 {
-    private static void rwLine(Path pathRead, Path pathWrite) {
+    private static void main (Path pathRead, Path pathWrite) {
         BufferedReader in = null;
         BufferedWriter out = null;
-        try {
+        try(in, out){
             in = Files.newBufferedReader(pathRead);
             out = Files.newBufferedWriter(pathWrite);
             out.write(in.readLine());
