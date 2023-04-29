@@ -6,8 +6,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class task1 {
-    private static void main (Path pathRead, Path pathWrite) {
+public class task1 { 
+    public static void main(String[] args) {
+        rwLine(null, null);
+    }
+    
+    private static void rwLine (Path pathRead, Path pathWrite) {
         // BufferedReader in = null;
         // BufferedWriter out = null;
         try(BufferedReader in = new BufferedReader(Files.newBufferedReader(pathRead)); BufferedWriter out = new BufferedWriter(Files.newBufferedWriter(pathWrite))){
@@ -16,22 +20,23 @@ public class task1 {
             out.write(in.readLine());
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (in != null) {
-                    in.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        // } finally {
+        //     try {
+        //         if (in != null) {
+        //             in.close();
+        //         }
+        //     } catch (IOException e) {
+        //         e.printStackTrace();
+        //     }
 
-            try {
-                if (out != null) {
-                    out.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        //     try {
+        //         if (out != null) {
+        //             out.close();
+        //         }
+        //     } catch (IOException e) {
+        //         e.printStackTrace();
+        //     }
         }
     }
 }
+
