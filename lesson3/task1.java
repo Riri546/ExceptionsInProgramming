@@ -8,9 +8,9 @@ import java.nio.file.Path;
 
 public class task1 {
     private static void main (Path pathRead, Path pathWrite) {
-        BufferedReader in = null;
-        BufferedWriter out = null;
-        try(in, out){
+        // BufferedReader in = null;
+        // BufferedWriter out = null;
+        try(BufferedReader in = new BufferedReader(Files.newBufferedReader(pathRead)); BufferedWriter out = new BufferedWriter(Files.newBufferedWriter(pathWrite))){
             in = Files.newBufferedReader(pathRead);
             out = Files.newBufferedWriter(pathWrite);
             out.write(in.readLine());
